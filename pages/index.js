@@ -54,11 +54,11 @@ export default function Home() {
   class="absolute top-68 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden text-papayawhip"
 >
   <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-    <a href="#hero" class="w-full text-center py-6 hover:opacity-90" onClick={toggleMenu}>Home</a>
-    <a href="#rockets" class="w-full text-center py-6 hover:opacity-90" onClick={toggleMenu}>Rockets</a>
-    <a href="#testimonials"class="w-full text-center py-6 hover:opacity-90" onClick={toggleMenu}>Testimonials</a>
-    <a href="#contact" class="w-full text-center py-6 hover:opacity-90" onClick={toggleMenu}>Contact Us</a>
-    <a href="#footer" class="w-full text-center py-6 hover:opacity-90" onClick={toggleMenu}>Legal</a>
+    <a href="#hero" class="w-full text-center py-6 hover:opacity-90" onClick= {toggleMenu}>Home</a>
+    <a href="#rockets" class="w-full text-center py-6 hover:opacity-90" onClick= {toggleMenu}>Rockets</a>
+    <a href="#testimonials"class="w-full text-center py-6 hover:opacity-90" onClick= {toggleMenu}>Testimonials</a>
+    <a href="#contact" class="w-full text-center py-6 hover:opacity-90" onClick={ toggleMenu}>Contact Us</a>
+    <a href="#footer" class="w-full text-center py-6 hover:opacity-90" onClick= {toggleMenu}>Legal</a>
   </nav>
 </section>
 </header>
