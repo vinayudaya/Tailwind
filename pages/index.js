@@ -1,31 +1,25 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+const hamburgerBtn = document.getElementById('hamburger-button')
+const mobileMenu = document.getElementById('mobile-menu')
+const toggleMenu = ()=>{
+  mobileMenu.classList.toggle('hidden')
+  mobileMenu.classList.toggle('flex')
+  hamburgerBtn.classList.toggle('toggle-btn')
+}
 const initApp = () => {
-  const hamburgerBtn = document.getElementById('hamburger-button')
-  const mobileMenu = document.getElementById('mobile-menu')
-
-  const toggleMenu = ()=>{
-      mobileMenu.classList.toggle('hidden')
-      mobileMenu.classList.toggle('flex')
-      hamburgerBtn.classList.toggle('toggle-btn')
-  }
-
   hamburgerBtn.addEventListener('click',toggleMenu)
   mobileMenu.addEventListener('click',toggleMenu)
 }
-
-document.addEventListener('DOMContentLoaded', initApp)
 export default function Home() {
   return (
     <html>
         <head>
-    <meta charset="UTF-8" />
+    <meta charSet="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme Rockets</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js" defer></script>
+    <script src="./main" defer></script>
   </head>
   <body>
       
@@ -38,7 +32,7 @@ export default function Home() {
   <div>
     <button
       id="hamburger-button"
-      class="text-3xl md:hidden cursor-pointer relative w-8 h-8"
+      class="text-3xl md:hidden cursor-pointer relative w-8 h-8" onClick={toggleMenu}
     >
 
       <div
@@ -46,7 +40,7 @@ export default function Home() {
       ></div>
     </button>
     <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
-      <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+      <a href="#rockets" class="hover:opacity-90" >Our Rockets</a>
       <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
       <a href="#contact" class="hover:opacity-90">Contact Us</a>
     </nav>
@@ -58,10 +52,10 @@ export default function Home() {
 >
   <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
     <a href="#hero" class="w-full text-center py-6 hover:opacity-90">Home</a>
-    <a href="#rockets" class="w-full text-center py-6 hover:opacity-90">Rockets</a>
-    <a href="#testimonials"class="w-full text-center py-6 hover:opacity-90">Testimonials</a>
-    <a href="#contact" class="w-full text-center py-6 hover:opacity-90">Contact Us</a>
-    <a href="#footer" class="w-full text-center py-6 hover:opacity-90">Legal</a>
+    <a href="#rockets" class="w-full text-center py-6 hover:opacity-90" onClick={toggleMenu}>Rockets</a>
+    <a href="#testimonials"class="w-full text-center py-6 hover:opacity-90" onClick={toggleMenu}>Testimonials</a>
+    <a href="#contact" class="w-full text-center py-6 hover:opacity-90" onClick={toggleMenu}>Contact Us</a>
+    <a href="#footer" class="w-full text-center py-6 hover:opacity-90" onClick={toggleMenu}>Legal</a>
   </nav>
 </section>
 </header>
@@ -85,7 +79,7 @@ export default function Home() {
       Think Acme Rockets.
     </p>
   </article>
-  <div className="w-1/2"><Image height="200" width="200" src="/Tailwind/rocketdab.png" alt="Rocket Dab" /></div>
+  <div className="w-1/2"><img src="./rocketdab.png" alt="Rocket Dab" /></div>
   
 </section>
 <hr class="mx-auto bg-black dark:bg-white w-1/2" />
@@ -251,8 +245,8 @@ export default function Home() {
       id="subject"
       name="subject"
       required
-      minlength="3"
-      maxlength="60"
+      minLength="3"
+      maxLength="60"
       placeholder="Your Subject"
       class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
     />
@@ -293,5 +287,6 @@ export default function Home() {
         </footer>
       </body>
  </html>
+
   )
 }
