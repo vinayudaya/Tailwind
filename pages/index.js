@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-const hamburgerBtn = document.getElementById('hamburger-button')
-const mobileMenu = document.getElementById('mobile-menu')
+
 const toggleMenu = ()=>{
+  const hamburgerBtn = document.getElementById('hamburger-button')
+const mobileMenu = document.getElementById('mobile-menu')
   mobileMenu.classList.toggle('hidden')
   mobileMenu.classList.toggle('flex')
   hamburgerBtn.classList.toggle('toggle-btn')
 }
 const initApp = () => {
+  const hamburgerBtn = document.getElementById('hamburger-button')
+const mobileMenu = document.getElementById('mobile-menu')
   hamburgerBtn.addEventListener('click',toggleMenu)
   mobileMenu.addEventListener('click',toggleMenu)
 }
