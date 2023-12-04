@@ -71,7 +71,7 @@ export default function Home() {
       Think Acme Rockets.
     </p>
   </article>
-  <div className="w-1/2"><Image height="200" width="200" src="/public/rocketdab.png" alt="Rocket Dab" /></div>
+  <div className="w-1/2"><Image height="200" width="200" src="/Tailwind/rocketdab.png" alt="Rocket Dab" /></div>
   
 </section>
 <hr class="mx-auto bg-black dark:bg-white w-1/2" />
@@ -109,7 +109,7 @@ export default function Home() {
       class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
     >
       <img
-        src="./img/rocketride.png"
+        src="./rocketride.png"
         alt="Adventurer"
         class="w-1/2 mb-6"
       />
@@ -130,7 +130,7 @@ export default function Home() {
     <li
       class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
     >
-      <img src="./img/rocketlaunch.png" alt="Launch" class="w-1/2 mb-6" />
+      <img src="./rocketlaunch.png" alt="Launch" class="w-1/2 mb-6" />
       <h3 class="text-3xl text-center text-slate-900 dark:text-white">
         Infinity
       </h3>
@@ -263,12 +263,8 @@ export default function Home() {
     <footer id="footer" class="bg-teal-700 text-white text-xl">
       <section class="max-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
         <address>
-          <h2>Acme Rocket-Powered Products, Inc.</h2>
-          555 Astro Way<br />
-          Fairfield, New Jersey 12345-5555<br />
           Email:
           <a href="mailto:vinayudaya0509@gmail.com">vinayudaya0509@gmail.com</a><br />
-          Phone: <a href="tel:+1555555555">(555) 555-5555</a>
         </address>
         <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
           <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
