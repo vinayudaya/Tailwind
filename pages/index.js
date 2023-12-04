@@ -71,7 +71,7 @@ export default function Home() {
       Think Acme Rockets.
     </p>
   </article>
-  <div className="w-1/2"><Image height="200" width="200" src="/Tailwind/rocketdab.png" alt="Rocket Dab" /></div>
+  <div className="w-1/2"><Image height="200" width="200" src="/public/rocketdab.png" alt="Rocket Dab" /></div>
   
 </section>
 <hr class="mx-auto bg-black dark:bg-white w-1/2" />
