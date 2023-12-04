@@ -71,7 +71,7 @@ export default function Home() {
       Think Acme Rockets.
     </p>
   </article>
-  <div className="w-1/2"><Image height="200" width="200" src="/rocketdab.png" alt="Rocket Dab" /></div>
+  <div className="w-1/2"><Image height="200" width="200" src="/Tailwind/rocketdab.png" alt="Rocket Dab" /></div>
   
 </section>
 <hr class="mx-auto bg-black dark:bg-white w-1/2" />
@@ -90,7 +90,7 @@ export default function Home() {
     <li
       class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
     >
-      <img src="./img/rocketman.png" alt="Explorer" class="w-1/2 mb-6" />
+      <img src="./rocketman.png" alt="Explorer" class="w-1/2 mb-6" />
       <h3 class="text-3xl text-center text-slate-900 dark:text-white">
         Explorer
       </h3>
