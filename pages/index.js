@@ -56,7 +56,7 @@ export default function Home() {
   <article class="sm:w-1/2">
     <h2  class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white" >
       We Boldy Go
-      <span class="text-indigo-700 dark:text-indigo-300">Where No Rocket</span>
+      <span class="text-indigo-700 dark:text-indigo-300"> Where No Rocket </span>
       Has Gone Before...
     </h2>
     <p
@@ -264,7 +264,7 @@ export default function Home() {
       <section class="max-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
         <address>
           Email:
-          <a href="mailto:vinayudaya0509@gmail.com">vinayudaya0509@gmail.com</a><br />
+          <a href="mailto:vinayudaya0509@gmail.com"> vinayudaya0509@gmail.com</a><br />
         </address>
         <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
           <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
